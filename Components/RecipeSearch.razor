@@ -1,0 +1,14 @@
+﻿<div class="input-group mb-3">
+    <input type="text" class="form-control" @bind="query" placeholder="Search for Recipes" aria-label="Search for Recipes" />
+</div>
+
+@code {
+    public string query { get; set; }
+
+
+    // function in child, called by parent
+    public string GetQuery()
+    {
+        return query;
+    }
+}

@@ -1,0 +1,39 @@
+﻿@using EAD_Assignment2.Models.Classes
+@inject NavigationManager Navigation
+
+@if (Recipe != null)
+{
+    <div class="card mb-4 shadow-sm bg-light border-0">
+        <div class="card-body">
+            <h5 class="card-title text-secondary">@Recipe.Name</h5>
+            <p class="card-text"><strong>Price:</strong> $@Recipe.Price</p>
+            <p class="card-text"><strong>Description:</strong> @Recipe.Description</p>
+            <p class="card-text"><strong>Category:</strong> @Recipe.Category</p>
+            <p class="card-text"><strong>Ingredients:</strong> @Recipe.Ingredients</p>
+
+            <div class="d-flex justify-content-between mt-3">
+                <button class="btn btn-danger" @onclick="Delete">Delete</button>
+                <button class="btn btn-primary" @onclick="NavigateToDetails">Details</button>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public Recipe Recipe { get; set; }
+
+    [Parameter]
+    public EventCallback<string> OnDelete { get; set; }
+
+    // child calls function in parent
+    async void Delete()
+    {
+        await OnDelete.InvokeAsync(Recipe.Id);
+    }
+
+    private void NavigateToDetails()
+    {
+        Navigation.NavigateTo($"/recipe/{Recipe.Id}");
+    }
+}

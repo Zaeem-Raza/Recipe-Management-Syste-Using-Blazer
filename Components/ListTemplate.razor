@@ -1,0 +1,21 @@
+﻿@typeparam TItem
+
+@if (Items != null && Items.Any())
+{
+    @foreach (var item in Items)
+    {
+        @ItemTemplate(item)
+    }
+}
+else
+{
+    <p>No items found.</p>
+}
+
+@code {
+    [Parameter]
+    public IEnumerable<TItem> Items { get; set; } // recipes
+
+    [Parameter]
+    public RenderFragment<TItem> ItemTemplate { get; set; } 
+}

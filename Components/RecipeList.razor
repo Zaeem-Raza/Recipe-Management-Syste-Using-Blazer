@@ -1,0 +1,131 @@
+﻿@page "/recipes"
+@using EAD_Assignment2.Models.Classes
+@inject EAD_Assignment2.Interfaces.IRecipeService IService;
+@inject NavigationManager NavigationManager;
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1 class="font-weight-bold text-dark mb-2">Recipe Management System</h1>
+        </div>
+
+        <!--Child ref-->
+        <div class="col-12">
+            <div class="input-group mb-3">
+                <RecipeSearch @ref="SearchComponent"></RecipeSearch>
+                <button class="btn btn-primary" type="button" @onclick="filterRecipes">Search</button>
+                <button class="btn btn-secondary ml-3" type="button" @onclick="ApplyCategoryFilter">Filter by Category</button>
+            </div>
+
+            <!-- Radio buttons for category selection -->
+            <div class="form-group mb-4">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="breakfast" name="category" value="Breakfast" @onchange="HandleCategoryChange" />
+                    <label class="form-check-label" for="breakfast">Breakfast</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="lunch" name="category" value="Lunch" @onchange="HandleCategoryChange" />
+                    <label class="form-check-label" for="lunch">Lunch</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="dinner" name="category" value="Dinner" @onchange="HandleCategoryChange" />
+                    <label class="form-check-label" for="dinner">Dinner</label>
+                </div>
+            </div>
+
+            <!-- Option between List and Grid view -->
+            <div class="mb-3">
+                <button class="btn btn-info" @onclick="ShowAsList">List View</button>
+                <button class="btn btn-info" @onclick="ShowAsGrid">Grid View</button>
+            </div>
+
+            @if (MyRecipes != null && MyRecipes.Any())
+            {
+                <div class="@GetLayoutClass()">
+                    <!-- Use the ListTemplate component to render the recipes -->
+                    <ListTemplate Items="MyRecipes">
+                        <ItemTemplate>
+                            <div class="@GetItemClass()">
+                                <RecipeCard Recipe="context" OnDelete="HandleDelete" />
+                            </div>
+                        </ItemTemplate>
+                    </ListTemplate>
+                </div>
+            }
+            else
+            {
+                <p class="text-muted">No recipes found.</p>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    public List<Recipe> MyRecipes = new List<Recipe>();
+    private RecipeSearch SearchComponent { get; set; }
+    private string selectedCategory;
+    private bool isGridView = false; // by default -> listview
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        MyRecipes = IService.GetAllRecipes().ToList();
+    }
+
+    private void HandleCategoryChange(ChangeEventArgs e)
+    {
+        // Get selected category
+        selectedCategory = e.Value.ToString();
+    }
+
+    // Filters recipes by search query and selected category
+    private void filterRecipes()
+    {
+        string query = SearchComponent.GetQuery();
+        var recipes = IService.GetAllRecipes();
+
+        if (!string.IsNullOrWhiteSpace(query))
+        {
+            recipes = recipes.Where(r => r.Name.Contains(query, StringComparison.OrdinalIgnoreCase)).ToList();
+        }
+
+        MyRecipes = recipes.ToList();
+    }
+
+    private void ApplyCategoryFilter()
+    {
+        var recipes = IService.GetAllRecipes();
+        if (!string.IsNullOrWhiteSpace(selectedCategory))
+        {
+            MyRecipes = recipes.Where(r => r.Category.Equals(selectedCategory, StringComparison.OrdinalIgnoreCase)).ToList();
+        }
+        else
+        {
+            MyRecipes = recipes.ToList(); // Show all recipes if no category is selected
+        }
+    }
+
+    private void ShowAsList()
+    {
+        isGridView = false;
+    }
+    private void ShowAsGrid()
+    {
+        isGridView = true;
+    }
+    private string GetLayoutClass()
+    {
+        return isGridView ? "row" : "";
+    }
+    // update class 
+    private string GetItemClass()
+    {
+        return isGridView ? "col-4" : "list-group-item";
+    }
+
+    private async Task HandleDelete(string recipeId)
+    {
+        IService.DeleteRecipe(recipeId);
+        MyRecipes = IService.GetAllRecipes().ToList();  // Refresh the recipe list
+    }
+}

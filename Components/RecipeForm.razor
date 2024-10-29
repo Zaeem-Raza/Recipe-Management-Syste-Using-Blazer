@@ -1,0 +1,84 @@
+﻿@page "/recipes/new"
+@page "/recipes/edit/{id}"
+@using EAD_Assignment2.Models.Classes
+@inject EAD_Assignment2.Interfaces.IRecipeService IService;
+@inject NavigationManager Navigation;
+
+<div class="container mt-5">
+    <div class="card shadow-lg">
+        <div class="card-header bg-primary text-white">
+            <h3>@(isEditMode ? "Edit Recipe" : "Add New Recipe")</h3>
+        </div>
+        <div class="card-body">
+            <EditForm Model="recipe" OnValidSubmit="HandleValidSubmit">
+                <DataAnnotationsValidator />
+                <ValidationSummary class="alert alert-danger" />
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <InputText id="name" class="form-control" @bind-Value="recipe.Name" />
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Price:</label>
+                    <InputNumber id="price" class="form-control" @bind-Value="recipe.Price" />
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description:</label>
+                    <InputText id="description" class="form-control" @bind-Value="recipe.Description" />
+                </div>
+                <div class="mb-3">
+                    <label for="ingredients" class="form-label">Ingredients (comma-separated):</label>
+                    <InputText id="ingredients" class="form-control" @bind-Value="recipe.Ingredients" />
+                </div>
+                <div class="mb-3">
+                    <label for="category" class="form-label">Category:</label>
+                    <!-- Dropdown for selecting category -->
+                    <!--BreakFast,Lunch,Dinner only-->
+                    <select id="category" class="form-control" @bind="recipe.Category">
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Dinner">Dinner</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-success w-100">
+                    @((isEditMode) ? "Update Recipe" : "Add Recipe")
+                </button>
+            </EditForm>
+        </div>
+    </div>
+</div>
+
+@code {
+    private Recipe recipe = new Recipe();
+    [Parameter] public string id { get; set; }
+    private bool isEditMode = false;  // by default -> add mode
+
+    protected override async Task OnInitializedAsync()
+    {
+        
+        if (!string.IsNullOrEmpty(id))
+        {
+            // id not null means in the edit mode
+            isEditMode = true;
+            recipe = IService.GetRecipes(id);
+        }
+    }
+
+    private void HandleValidSubmit()
+    {
+        if (isEditMode)
+        {
+            
+            IService.UpdateRecipe(recipe);
+        }
+        else
+        {
+            
+            IService.CreateRecipe(recipe);
+        }
+
+        // Go back to recipes
+        Navigation.NavigateTo("/recipes");
+    }
+}

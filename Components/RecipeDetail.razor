@@ -1,0 +1,46 @@
+﻿@page "/recipe/{id}"
+@using EAD_Assignment2.Models.Classes
+@inject EAD_Assignment2.Interfaces.IRecipeService IService
+@inject NavigationManager Navigation
+
+<div class="container mt-5">
+    <div class="card shadow-lg bg-light border-0">
+        <div class="card-header bg-secondary text-white">
+            <h3>Recipe Details</h3>
+        </div>
+        <div class="card-body">
+            @if (recipe != null)
+            {
+                <div>
+                    <h4 class="card-title text-secondary">@recipe.Name</h4>
+                    <p><strong>Price:</strong> $@recipe.Price</p>
+                    <p><strong>Description:</strong> @recipe.Description</p>
+                    <p><strong>Ingredients:</strong> @recipe.Ingredients</p>
+                    <p><strong>Category:</strong> @recipe.Category</p>
+                    <button class="btn btn-warning mt-3" @onclick="NavigateToEdit">Edit Recipe</button>
+                </div>
+            }
+            else
+            {
+                <p class="text-danger">Recipe not found.</p>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string id { get; set; }
+    private Recipe recipe;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // get specified recipe
+        recipe = IService.GetRecipes(id);
+    }
+
+    // Navigating to edit thw recipe...
+    private void NavigateToEdit()
+    {
+        Navigation.NavigateTo($"/recipes/edit/{id}");
+    }
+}

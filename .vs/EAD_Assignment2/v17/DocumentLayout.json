@@ -1,0 +1,218 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|d:\\7th semester\\ead\\assignments\\cs21-f21-ead-assignment-2-zaeem-raza\\components\\recipeform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|solutionrelative:components\\recipeform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|d:\\7th semester\\ead\\assignments\\cs21-f21-ead-assignment-2-zaeem-raza\\components\\recipecard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|solutionrelative:components\\recipecard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|d:\\7th semester\\ead\\assignments\\cs21-f21-ead-assignment-2-zaeem-raza\\components\\recipelist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|solutionrelative:components\\recipelist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|d:\\7th semester\\ead\\assignments\\cs21-f21-ead-assignment-2-zaeem-raza\\components\\listtemplate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|solutionrelative:components\\listtemplate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|d:\\7th semester\\ead\\assignments\\cs21-f21-ead-assignment-2-zaeem-raza\\components\\recipedetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|solutionrelative:components\\recipedetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|d:\\7th semester\\ead\\assignments\\cs21-f21-ead-assignment-2-zaeem-raza\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|solutionrelative:models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|d:\\7th semester\\ead\\assignments\\cs21-f21-ead-assignment-2-zaeem-raza\\components\\recipesearch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|solutionrelative:components\\recipesearch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|d:\\7th semester\\ead\\assignments\\cs21-f21-ead-assignment-2-zaeem-raza\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|solutionrelative:layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|d:\\7th semester\\ead\\assignments\\cs21-f21-ead-assignment-2-zaeem-raza\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|solutionrelative:app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|d:\\7th semester\\ead\\assignments\\cs21-f21-ead-assignment-2-zaeem-raza\\repositories\\recipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|solutionrelative:repositories\\recipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|d:\\7th semester\\ead\\assignments\\cs21-f21-ead-assignment-2-zaeem-raza\\interfaces\\irecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|solutionrelative:interfaces\\irecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|d:\\7th semester\\ead\\assignments\\cs21-f21-ead-assignment-2-zaeem-raza\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CCCE25B-E2AF-4E8A-9F28-49A154660C16}|EAD_Assignment2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RecipeCard.razor",
+              "DocumentMoniker": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Components\\RecipeCard.razor",
+              "RelativeDocumentMoniker": "Components\\RecipeCard.razor",
+              "ToolTip": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Components\\RecipeCard.razor",
+              "RelativeToolTip": "Components\\RecipeCard.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T18:08:32.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ListTemplate.razor",
+              "DocumentMoniker": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Components\\ListTemplate.razor",
+              "RelativeDocumentMoniker": "Components\\ListTemplate.razor",
+              "ToolTip": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Components\\ListTemplate.razor",
+              "RelativeToolTip": "Components\\ListTemplate.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T09:58:47.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RecipeDetail.razor",
+              "DocumentMoniker": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Components\\RecipeDetail.razor",
+              "RelativeDocumentMoniker": "Components\\RecipeDetail.razor",
+              "ToolTip": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Components\\RecipeDetail.razor",
+              "RelativeToolTip": "Components\\RecipeDetail.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T18:08:32.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RecipeList.razor",
+              "DocumentMoniker": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Components\\RecipeList.razor",
+              "RelativeDocumentMoniker": "Components\\RecipeList.razor",
+              "ToolTip": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Components\\RecipeList.razor",
+              "RelativeToolTip": "Components\\RecipeList.razor",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAHQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T18:08:34.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RecipeForm.razor",
+              "DocumentMoniker": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Components\\RecipeForm.razor",
+              "RelativeDocumentMoniker": "Components\\RecipeForm.razor",
+              "ToolTip": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Components\\RecipeForm.razor",
+              "RelativeToolTip": "Components\\RecipeForm.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T18:08:34.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Recipe.cs",
+              "DocumentMoniker": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Models\\Recipe.cs",
+              "RelativeDocumentMoniker": "Models\\Recipe.cs",
+              "ToolTip": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Models\\Recipe.cs",
+              "RelativeToolTip": "Models\\Recipe.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T17:07:22.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RecipeSearch.razor",
+              "DocumentMoniker": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Components\\RecipeSearch.razor",
+              "RelativeDocumentMoniker": "Components\\RecipeSearch.razor",
+              "ToolTip": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Components\\RecipeSearch.razor",
+              "RelativeToolTip": "Components\\RecipeSearch.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T18:08:35.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Layout\\NavMenu.razor",
+              "ToolTip": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T19:16:38.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\App.razor",
+              "RelativeDocumentMoniker": "App.razor",
+              "ToolTip": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\App.razor",
+              "RelativeToolTip": "App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-19T04:36:55.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RecipeService.cs",
+              "DocumentMoniker": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Repositories\\RecipeService.cs",
+              "RelativeDocumentMoniker": "Repositories\\RecipeService.cs",
+              "ToolTip": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Repositories\\RecipeService.cs",
+              "RelativeToolTip": "Repositories\\RecipeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T17:13:53.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IRecipeService.cs",
+              "DocumentMoniker": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Interfaces\\IRecipeService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IRecipeService.cs",
+              "ToolTip": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Interfaces\\IRecipeService.cs",
+              "RelativeToolTip": "Interfaces\\IRecipeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T17:14:21.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\7th Semester\\EAD\\Assignments\\cs21-f21-ead-assignment-2-Zaeem-Raza\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T17:17:20.915Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
